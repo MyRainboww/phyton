@@ -27,6 +27,15 @@ list1 = [rock,paper,scissors]
 
 choice = int(input("Make a choice 0-rock 1-paper 2-scissors: "))
 computer = random.randint(0,2)
+res = choice - computer
+if res == 1 or res == -2:
+    print("You win!")
+elif res == -1 or res == 2:
+    print("You lose!")
+else:
+    print("It's a tie!")
+
+
 
 if choice == 0 and computer == 2:
     print("You win")
